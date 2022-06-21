@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>HTML Images</title>
+        <link rel="icon" type="image/x-icon" href="./image/favicon.png">
+    </head>
+    <body>
+        <h1 style="color:red"> HTML Image</h1>
+
+        <!-- relative path -->
+        <img src="./image/pic.jpg" alt="Not Available" width="800" height="400"> <br>
+
+       <!--  absolute path -->
+        <img src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/asteroid_blue.png" alt="W3Schools.com" width="400" height="200"
+        style="float: right;">
+
+
+        <h1 style="color:red"> HTML Image Map</h1>
+
+        <map name="infographic">
+            <area shape="poly" coords="130,147,200,107,254,219,130,228"
+                  href="https://developer.mozilla.org/docs/Web/HTML"
+                  target="_blank" alt="HTML" />
+            <area shape="poly" coords="130,147,130,228,6,219,59,107"
+                  href="https://developer.mozilla.org/docs/Web/CSS"
+                  target="_blank" alt="CSS" />
+            <area shape="poly" coords="130,147,200,107,130,4,59,107"
+                  href="https://developer.mozilla.org/docs/Web/JavaScript"
+                  target="_blank" alt="JavaScript" />
+        </map>
+        <img usemap="#infographic" src="./image/mdn-info2.png" alt="MDN infographic" />
+    </body>
+</html>
+
+<!-- 
+The HTML <img> tag is used to embed an image in a web page.
+
+Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The <img> tag has two required attributes:
+
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image 
+
+<map>
+
+    * The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+
+    The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.
+
+    To create an image map you need an image, and some HTML code that describes the clickable areas.
+
+
+    A clickable area is defined using an <area> element.
+
+
+    You must define the shape of the clickable area, and you can choose one of these values:
+
+        rect - defines a rectangular region
+        circle - defines a circular region
+        poly - defines a polygonal region
+        default - defines the entire region
+
+-->
