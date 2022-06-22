@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>responsive in HTML </title>
+        <link rel="icon" type="image/x-icon" href="./image/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+            .left {
+            background-color: #2196F3;
+            padding: 20px;
+            float: left;
+            width: 20%; /* The width is 20%, by default */
+            }
+
+            .main {
+            background-color: #f1f1f1;
+            padding: 20px;
+            float: left;
+            width: 60%; /* The width is 60%, by default */
+            }
+
+            .right {
+            background-color: #04AA6D;
+            padding: 20px;
+            float: left;
+            width: 20%; /* The width is 20%, by default */
+            }
+
+            @media screen and (max-width: 800px) {
+            .left, .main, .right {
+                width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+            }
+            }
+
+    </style>
+    <body>  
+        <h1 style="font-size:2vw; color: red;">Responsive Text</h1>
+
+        <p style="font-size:2vw;">Resize the browser window to see how the text size scales.</p>
+
+        <p style="font-size:2vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+        <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+        <h1 style="font-size:2vw; color: red;">Media Queries</h1>   
+
+        <p>Resize the browser window.</p>
+
+        <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+        <div class="left">
+        <p>Left Menu</p>
+        </div>
+
+        <div class="main">
+        <p>Main Content</p>
+        </div>
+
+        <div class="right">
+        <p>Right Content</p>
+        </div>
+
+    </body>
+
+</html>
+
+
+<!-- The text size can be set with a "vw" unit, which means the "viewport width".
+
+That way the text size will follow the size of the browser window: 
+
+Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+-->
